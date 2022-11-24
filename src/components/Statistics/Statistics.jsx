@@ -3,24 +3,24 @@ export const Statistics = data => {
     <section className="statistics">
       <h2 className="title">Upload stats</h2>
 
-      <ul className="stat-list">{dataMap}</ul>
+      <ul className="stat-list">555</ul>
     </section>
   );
 };
 
-function dataMap(data) {
-  const newMarkUp = data
-    .map(el => {
-      return (
-        <li className="item">
-          <span className="label">{el.label}</span>
-          <span className="percentage">{el.percentage}%</span>
-        </li>
-      );
-    })
-    .join('');
+// function dataMap(data) {
+//   const newMarkUp = data
+//     .map(el => {
+//       return (
+//         <li className="item">
+//           <span className="label">{el.label}</span>
+//           <span className="percentage">{el.percentage}%</span>
+//         </li>
+//       );
+//     })
+//     .join('');
 
-  console.log(newMarkUp);
+//   console.log(newMarkUp);
 
-  return newMarkUp;
-}
+//   return newMarkUp;
+// }
