@@ -1,26 +1,32 @@
-export const Statistics = data => {
-  return (
-    <section className="statistics">
-      <h2 className="title">Upload stats</h2>
+import PropTypes from 'prop-types';
+import css from './Statistics.module.css';
 
-      <ul className="stat-list">555</ul>
+export const Statistics = ({ title, stats }) => {
+  console.log(stats);
+  return (
+    <section className={css.statistics}>
+      {title ? <h2 class={css.title}>{title}</h2> : null}
+      <ul className={css.statList}>
+        {stats.map(element => {
+          return (
+            <li className={css.item} key={element.id}>
+              <span className={css.label}>{element.label}</span>
+              <span className={css.percentage}>{element.percentage}%</span>
+            </li>
+          );
+        })}
+      </ul>
     </section>
   );
 };
 
-// function dataMap(data) {
-//   const newMarkUp = data
-//     .map(el => {
-//       return (
-//         <li className="item">
-//           <span className="label">{el.label}</span>
-//           <span className="percentage">{el.percentage}%</span>
-//         </li>
-//       );
-//     })
-//     .join('');
-
-//   console.log(newMarkUp);
-
-//   return newMarkUp;
-// }
+Statistics.propTypes = {
+  title: PropTypes.string,
+  stats: PropTypes.arrayOf(
+    PropTypes.exact({
+      id: PropTypes.string.isRequired,
+      label: PropTypes.string.isRequired,
+      percentage: PropTypes.number.isRequired,
+    })
+  ),
+};

@@ -1,7 +1,6 @@
 .profile {
   display: block;
-  width: 300px;
-  height: 350px;
+  width: 350px;
   background-color: #ffffff;
   border-radius: 5px;
   margin: 10px 50px;
@@ -43,7 +42,7 @@
   border-top: 1px rgb(54, 110, 145) solid;
   border-left: 1px rgb(54, 110, 145) solid;
   padding: 20px 25px;
-  width: 50px;
+  width: 70px;
   gap: 5px;
   height: 35px;
 }
