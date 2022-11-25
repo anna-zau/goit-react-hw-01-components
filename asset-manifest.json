@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/git@github.com:anna-zau/goit-react-hw-01-components.git/static/css/main.6815391d.css",
-    "main.js": "/git@github.com:anna-zau/goit-react-hw-01-components.git/static/js/main.837ec1ce.js",
-    "index.html": "/git@github.com:anna-zau/goit-react-hw-01-components.git/index.html",
-    "main.6815391d.css.map": "/git@github.com:anna-zau/goit-react-hw-01-components.git/static/css/main.6815391d.css.map",
-    "main.837ec1ce.js.map": "/git@github.com:anna-zau/goit-react-hw-01-components.git/static/js/main.837ec1ce.js.map"
+    "main.css": "/goit-react-hw-01-components/static/css/main.6815391d.css",
+    "main.js": "/goit-react-hw-01-components/static/js/main.837ec1ce.js",
+    "index.html": "/goit-react-hw-01-components/index.html",
+    "main.6815391d.css.map": "/goit-react-hw-01-components/static/css/main.6815391d.css.map",
+    "main.837ec1ce.js.map": "/goit-react-hw-01-components/static/js/main.837ec1ce.js.map"
   },
   "entrypoints": [
     "static/css/main.6815391d.css",
