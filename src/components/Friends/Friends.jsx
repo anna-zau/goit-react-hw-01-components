@@ -1,4 +1,4 @@
-import { FaRegCheckCircle, FaRegTimesCircle } from 'react-icons/fa';
+// import { FaRegCheckCircle, FaRegTimesCircle } from 'react-icons/fa';
 import PropTypes from 'prop-types';
 import css from './Friends.module.css';
 
@@ -9,13 +9,9 @@ export const FriendList = ({ friends }) => {
         return (
           <li key={id} className={css.item}>
             {isOnline ? (
-              <span className={css.status}>
-                <FaRegCheckCircle />
-              </span>
+              <span className={`${css.status} ${css.online}`}></span>
             ) : (
-              <span className={css.status}>
-                <FaRegTimesCircle />
-              </span>
+              <span className={`${css.status} ${css.offline}`}></span>
             )}
             <img className={css.avatar} src={avatar} alt="User avatar" />
             <p className={css.name}>{name}</p>

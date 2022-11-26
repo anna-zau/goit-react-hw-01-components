@@ -1,10 +1,16 @@
-/* @import-normalize; bring in normalize.css styles */
+@import-normalize;
 
 :root {
-  --color-text-grey: rgb(82, 100, 111);
-  --background-body: rgb(204, 219, 237);
-  --white: white;
-  --background-blue: rgb(163, 185, 227);
+  --color-text-grey: #52646f;
+  --background-body: #ccdbed;
+  --white: #ffffff;
+  --background-blue: #a3b9e3;
+  --color-text-dark: #262b31;
+  --shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+  --friends-background: #f0f8ff;
+  --online-color: #008000;
+  --offline-color: #ff0000;
 }
 
 body {
@@ -24,4 +30,8 @@ code {
 
 p {
   margin: 0;
+}
+
+list {
+  list-style: none;
 }

@@ -1,11 +1,11 @@
 .profile {
   display: block;
   width: 350px;
-  background-color: #ffffff;
+  background-color: var(--white);
   border-radius: 5px;
   margin: 10px 50px;
   padding-top: 30px;
-  border: 1px rgb(54, 110, 145) solid;
+  border: 1px #366e91 solid;
 }
 
 .description {
@@ -28,7 +28,7 @@
   list-style: none;
   display: flex;
   justify-content: center;
-  background-color: rgb(255, 255, 255);
+  background-color: var(--white);
 
   padding-left: 0;
   margin-top: 15px;
@@ -39,8 +39,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  border-top: 1px rgb(54, 110, 145) solid;
-  border-left: 1px rgb(54, 110, 145) solid;
+  border-top: 1px #366e91 solid;
+  border-left: 1px #366e91 solid;
   padding: 20px 25px;
   width: 70px;
   gap: 5px;
@@ -54,23 +54,23 @@
 .name {
   font-weight: 700;
   font-size: 20px;
-  color: rgb(38, 43, 49);
+  color: var(--color-text-dark);
   line-height: 1.14;
 }
 
 .tag,
 .location {
-  color: rgb(82, 100, 111);
+  color: var(--color-text-grey);
   font-size: 15px;
 }
 
 .label {
-  color: rgb(82, 100, 111);
+  color: var(--color-text-grey);
   font-size: 13px;
   line-height: 0.8;
 }
 
 .quantity {
   font-weight: 700;
-  color: rgb(38, 43, 49);
+  color: var(--color-text-dark);
 }
