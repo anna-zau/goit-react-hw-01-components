@@ -6,11 +6,11 @@ export const Statistics = ({ title, stats }) => {
     <section className={css.statistics}>
       {title ? <h2 className={css.title}>{title}</h2> : null}
       <ul className={css.statList}>
-        {stats.map(element => {
+        {stats.map(({ id, label, percentage }) => {
           return (
-            <li className={css.item} key={element.id}>
-              <span className={css.label}>{element.label}</span>
-              <span className={css.percentage}>{element.percentage}%</span>
+            <li className={css.item} key={id}>
+              <span className={css.label}>{label}</span>
+              <span className={css.percentage}>{percentage}%</span>
             </li>
           );
         })}
